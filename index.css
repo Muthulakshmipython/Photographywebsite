@@ -1,0 +1,223 @@
+/* Adjust logo size */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+.logo-img {
+    height: 60px;
+    width: 100%;
+  }
+  
+
+  
+  .navbar-nav .nav-link {
+   
+    padding: 0.6rem 1rem;
+    color: #000000;
+    font-weight:bold;
+    font-size: 18px;
+    border: #E93A9D;
+    border-width: 2px;
+  }
+  
+  /* Add spacing to navbar */
+  .navbar .btn {
+    margin-left: 20px;
+  }
+  .custom-navbar {
+    border: 3px solid #E93A9D; /* Use any color or thickness */
+  }
+  .banner {
+    position: relative;
+
+    padding: 0; 
+    width: 100%;
+   
+    overflow: hidden; 
+    margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  
+  .banner-img {
+  
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .custom-login-btn {
+    background-color: #E93A9D;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+ 
+    max-width: 200px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+  .custom-login-btn:hover {
+    background-color: #c52f85; /* darker shade on hover */
+  }
+  
+
+
+
+  
+  @media (max-width: 1024px) {
+    .navbar-nav .nav-link {
+   
+        padding: 0.5rem 1rem;
+        color: #000000;
+        font-weight:bold;
+        font-size: 15px;
+        border: #E93A9D;
+        border-width: 2px;
+      }
+  }
+
+
+ 
+
+  @media (max-width: 768px) {
+    .banner {
+        position: relative;
+    
+        padding: 0; 
+        width: 100%;
+        height: 30vh; 
+        overflow: hidden; 
+        margin-top: 90px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+  }
+  
+
+  @media (max-width: 768px) {
+    .second-section {
+      margin-top: 10;
+      }
+  }
+  @media (min-width: 770px),(max-width:820) {
+    .images-grid {
+      display: grid;
+      grid-template-columns: 3;
+      }
+  }
+  
+
+  /* section 2 */
+
+  .photogrid
+  {
+    max-width: 110%;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .glass-bg-section {
+    max-width: 70%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background-image: url('./IMAGES/droplets.png'); /* Change to your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Optional - Add subtle raindrop overlay using pseudo element */
+  .glass-bg-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .glass-bg-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .offer-box {
+    background: linear-gradient(to right, #f1d1a1 50%, #d2232a 50%);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .photo-section, .discount-section {
+    padding: 20px;
+  }
+
+  .photo-section {
+    background-color: #f1d1a1;
+    text-align: center;
+  }
+
+  .discount-section {
+    background-color: #d2232a;
+    text-align: center;
+  }
+
+  .black-slice {
+    background: linear-gradient(135deg, #000 50%, transparent 50%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .image-frame {
+    border: 5px solid white;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .offer-image {
+    
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .special-offer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ec2aaf;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .special-offer img {
+    width: 100px;
+  }
+
+  .discount-highlight {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 2px 2px #000;
+  }
+
+  .subtext {
+    color: #fff;
+    font-weight: 500;
+  }
